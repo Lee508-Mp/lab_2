@@ -15,8 +15,8 @@ def multiply(num1, num2):
 
 def divide(num1, num2):
     if num2 == 0:
-        print("Error: undified ")
-        return "Error: undified "
+        print("Error: Division by zero ")
+        return "Error: Division by zero "
     return num1 / num2
 
 def modulus(num1, num2):
@@ -71,3 +71,22 @@ def clear_history():
     global operations_count
     history = []
     operations_count = 0
+
+def memory_operations(op):
+    global memory
+    if op == 'M+':
+        try:
+            num = get_number_input("Enter number to add to memory: ")
+            memory += num
+        except Exception as e:
+            print(f"Error: {e}")
+    elif op == 'M-':
+        try:
+            num = get_number_input("Enter number to subtract from memory: ")
+            memory -= num
+        except Exception as e:
+            print(f"Error: {e}")
+    elif op == 'MR':
+        print(f"Memory: {memory}")
+    elif op == 'MC':
+        memory = 0
