@@ -39,4 +39,19 @@ def update_history(num1, operation, num2,result):
     global operations_count
     operations_count += 1
 
+def display_history():
+    if not history:
+        print("History is empty.")
+    else:
+        for entry in history:
+            print(entry)
 
+# Part 4: Test Your Calculator
+def test_calculator():
+    # Test operations
+    print("Testing operations...")
+    print(add(2, 3))
+    print(subtract(5, 2))
+    print(multiply(4, 5))
+    print(divide(10, 2))
+    print(modulus(10, 3))
