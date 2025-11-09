@@ -90,3 +90,14 @@ def memory_operations(op):
         print(f"Memory: {memory}")
     elif op == 'MC':
         memory = 0
+def advanced_operations():
+    num = get_number_input("Enter number for advanced operation: ")
+    op = input("Enter operation (exp for exponent, sqrt for square root): ")
+    if op == 'exp':
+        power = get_number_input("Enter power: ")
+        print(num ** power)
+    elif op == 'sqrt':
+        if num < 0:
+            print("Error: Square root of negative number.")
+        else:
+            print(num ** 0.5)
