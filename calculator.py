@@ -101,3 +101,14 @@ def advanced_operations():
             print("Error: Square root of negative number.")
         else:
             print(num ** 0.5)
+def main():
+    while True:
+        print("\nCalculator Menu:")
+        print("1. Perform basic operation")
+        print("2. Display history")
+        print("3. Clear history")
+        print("4. Memory operations")
+        print("5. Advanced operations")
+        print("6. Exit")
+        choice = input("Enter choice: ")
+        
