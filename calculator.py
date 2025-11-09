@@ -35,4 +35,8 @@ def get_number_input(prompt):
             print("Invalid input. Please enter a number.")
 #part 3: implement history tracking 
 def update_history(num1, operation, num2,result):
-    
+    history.append(f"{num1} {operation} {num2} = {result}")
+    global operations_count
+    operations_count += 1
+
+
