@@ -15,8 +15,8 @@ def multiply(num1, num2):
 
 def divide(num1, num2):
     if num2 == 0:
-        print("Error: unified ")
-        return "Error: unified "
+        print("Error: undified ")
+        return "Error: undified "
     return num1 / num2
 
 def modulus(num1, num2):
