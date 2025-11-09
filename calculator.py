@@ -55,3 +55,19 @@ def test_calculator():
     print(multiply(4, 5))
     print(divide(10, 2))
     print(modulus(10, 3))
+
+     # Test division by zero handling
+    print(divide(10, 0))
+    
+    # Verify history
+    display_history()
+    
+    # Confirm operations count
+    print(f"Operations count: {operations_count}")
+
+# Bonus features
+def clear_history():
+    global history
+    global operations_count
+    history = []
+    operations_count = 0
