@@ -24,3 +24,12 @@ def modulus(num1, num2):
         print("Error: Modulus by zero")
         return "Error: Modulus by zero"
     return num1 % num2
+
+# Part 2: Implement Input Handling
+def get_number_input(prompt):
+    while True:
+        try:
+            num = float(input(prompt))
+            return num
+        except ValueError:
+            print("Invalid input. Please enter a number.")
