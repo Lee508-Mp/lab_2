@@ -143,3 +143,8 @@ def main():
             advanced_operations()
         elif choice == '6':
             break
+        else:
+            print("Invalid choice.")
+
+if __name__ == "__main__":
+    main()
