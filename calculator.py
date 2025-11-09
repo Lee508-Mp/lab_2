@@ -33,3 +33,6 @@ def get_number_input(prompt):
             return num
         except ValueError:
             print("Invalid input. Please enter a number.")
+#part 3: implement history tracking 
+def update_history(num1, operation, num2,result):
+    
