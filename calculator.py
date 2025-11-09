@@ -138,4 +138,8 @@ def main():
             clear_history()
         elif choice == '4':
             op = input("Enter memory operation (M+, M-, MR, MC): ")
-                
+            memory_operations(op)
+        elif choice == '5':
+            advanced_operations()
+        elif choice == '6':
+            break
