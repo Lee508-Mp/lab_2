@@ -112,3 +112,23 @@ def main():
         print("6. Exit")
         choice = input("Enter choice: ")
         
+        if choice == '1':
+            num1 = get_number_input("Enter first number: ")
+            op = input("Enter operation (+, -, *, /, %): ")
+            num2 = get_number_input("Enter second number: ")
+            if op == '+':
+                result = add(num1, num2)
+            elif op == '-':
+                result = subtract(num1, num2)
+            elif op == '*':
+                result = multiply(num1, num2)
+            elif op == '/':
+                result = divide(num1, num2)
+            elif op == '%':
+                result = modulus(num1, num2)
+            else:
+                print("Invalid operation.")
+                continue
+            if result is not None and not isinstance(result, str):
+                print(f"Result: {result}")
+                update_history(num1, op, num2, result)
