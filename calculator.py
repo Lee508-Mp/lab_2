@@ -132,3 +132,10 @@ def main():
             if result is not None and not isinstance(result, str):
                 print(f"Result: {result}")
                 update_history(num1, op, num2, result)
+        elif choice == '2':
+            display_history()
+        elif choice == '3':
+            clear_history()
+        elif choice == '4':
+            op = input("Enter memory operation (M+, M-, MR, MC): ")
+                
