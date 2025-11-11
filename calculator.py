@@ -1,9 +1,10 @@
-# python calculator 
+
+# my simple python calculator 
 history = []
 operations_count = 0
 memory = 0
 
-# Part 1: Implement Basic Arithmetic Functions
+# Part 1: Implement Basic Arithmetic Function
 def add(num1, num2):
     return num1 + num2
 
@@ -24,8 +25,6 @@ def modulus(num1, num2):
         print("Error: Modulus by zero")
         return "Error: Modulus by zero"
     return num1 % num2
-
-# Part 2: Implement Input Handling
 def get_number_input(prompt):
     while True:
         try:
@@ -59,7 +58,7 @@ def test_calculator():
      # Test division by zero handling
     print(divide(10, 0))
     
-    # Verify history
+    # histrory
     display_history()
     
     # Confirm operations count
@@ -102,6 +101,7 @@ def advanced_operations():
         else:
             print(num ** 0.5)
 def main():
+#this is the main program loop    
     while True:
         print("\nCalculator Menu:")
         print("1. Perform basic operation")
