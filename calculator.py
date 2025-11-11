@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# Global variables
-=======
+
 # my simple python calculator 
->>>>>>> 4cd6d06d7556d1c9738c156a29718a3105e4499a
 history = []
 operations_count = 0
 memory = 0
