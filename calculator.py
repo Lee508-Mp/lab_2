@@ -1,25 +1,19 @@
-
 # my simple python calculator 
 history = []
 operations_count = 0
 memory = 0
-
 # Part 1: Implement Basic Arithmetic Function
 def add(num1, num2):
     return num1 + num2
-
 def subtract(num1, num2):
     return num1 - num2
-
 def multiply(num1, num2):
     return num1 * num2
-
 def divide(num1, num2):
     if num2 == 0:
         print("Error: Division by zero ")
         return "Error: Division by zero "
     return num1 / num2
-
 def modulus(num1, num2):
     if num2 == 0:
         print("Error: Modulus by zero")
@@ -44,7 +38,6 @@ def display_history():
     else:
         for entry in history:
             print(entry)
-
 # Part 4: Test Your Calculator
 def test_calculator():
     # Test operations
@@ -54,8 +47,6 @@ def test_calculator():
     print(multiply(4, 5))
     print(divide(10, 2))
     print(modulus(10, 3))
-
-     # Test division by zero handling
     print(divide(10, 0))
     
     # histrory
