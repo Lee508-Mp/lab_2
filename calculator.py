@@ -71,7 +71,7 @@ def clear_history():
     global operations_count
     history = []
     operations_count = 0
-
+#this is a comment
 def memory_operations(op):
     global memory
     if op == 'M+':
