@@ -102,6 +102,7 @@ def advanced_operations():
         else:
             print(num ** 0.5)
 def main():
+#this is the main program loop    
     while True:
         print("\nCalculator Menu:")
         print("1. Perform basic operation")
