@@ -25,7 +25,6 @@ def modulus(num1, num2):
         print("Error: Modulus by zero")
         return "Error: Modulus by zero"
     return num1 % num2
-
 def get_number_input(prompt):
     while True:
         try:
