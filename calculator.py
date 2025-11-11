@@ -1,4 +1,4 @@
-# Global variables
+# python calculator 
 history = []
 operations_count = 0
 memory = 0
